@@ -42,11 +42,12 @@ body{
     background-color: var(--button);
     backdrop-filter: blur(2px);
     color: var(--font);
-    font-size: 1rem;
+    font-size: 0.95rem;
+    cursor:pointer;
 }
 .pfp{
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     background: url("pepe.jpeg");
     background-position: center center;
     background-size: cover;
@@ -74,10 +75,12 @@ body{
     border-radius: 10px 10px 8px 8px;
 }
 .text-head p{
-    font-size: 1.2rem;
+    font-size: 0.97rem;
+    cursor:default;
 }
 .text-head h1{
-    font-size: 1.4rem;
+    font-size: 1rem;
+    cursor: default;
 }
 .area-button button:hover{
     width: 85%;
@@ -92,41 +95,100 @@ body{
 }
 
 /* media query */
-
-/* 1. handphone */
-@media screen and (min-height: 700px) {
-    .area-button{
-        padding: 1rem 0 1.2rem 0;
+/* portrait */
+@media screen and (min-width: 300px) and (orientation: portrait){
+    .text-head h1{
+        font-size: 1.24rem;
+    }
+    .text-head p {
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 410px) and (orientation: portrait){
+    .text-head h1{
+        font-size: 1.35rem;
+    }
+}
+@media screen and (min-width: 425px) and (orientation: portrait){
+    .text-head h1{
+        font-size: 1.5rem;
+    }
+    .text-head p {
+        font-size: 1.15rem;
     }
     .area-button button{
-        height: 3.1rem;
-        width: 82%;
+        font-size: 1rem;
+        width: 86%;
     }
-    .area-button button:hover{
-        width: 87%;
+    .area-button button:hover, .area-button button:nth-of-type(1):hover{
+        width: 89%;
     }
-    .area-button button:nth-of-type(1):hover{
-        width: 87%;
+    .pfp{
+        width: 135px;
+        height: 135px;;
+    }
+}
+@media screen and (min-width: 768px) and (orientation: portrait){
+    .text-head h1{
+        font-size: 2.1rem;
+    }
+    .text-head p{
+        font-size: 1.35rem;;
+    }
+    .main-body{
+        max-width: 600px;
+    }
+    .area-button button{
+        height: 3.7rem;
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-width: 1000px) and (orientation: portrait){
+    .main-body{
+        max-width: 700px;
+    }
+    .area-button button {
+        height: 4rem;
+        font-size: 1.2rem;
     }
 }
 
-/* 2. tablet */
-@media screen and (min-height: 900px) and (min-width: 700px){
+/* landscape */
+@media screen and (max-height: 650px) and (orientation: landscape){
+    .topic{
+        padding-top: 79px;
+    }
+    .area-button{
+        padding: 0.5rem 0 0.1rem 0;
+    }
+}
+@media screen and (min-height: 651px) and (orientation: landscape){
+    .topic{
+        padding-top: 90px;
+    }
+    .area-button{
+        padding: 1rem 0 0.6rem 0;
+    }
     .text-head h1{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+    .text-head p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-height: 1200px) and (orientation: landscape) {
+    .pfp{
+        width: 135px;
+        height: 135px;
+    }
+    .text-head h1{
+        font-size: 2rem;
+    }
+    .text-head p{
+        font-size: 1.3rem;
     }
     .area-button button{
-        height: 3.4rem;
-        width: 86%;
-    }
-    .main-body{
-        width: 100vw;
-        max-width: 600px;
-    }
-    .area-button button:hover{
-        width: 90%;
-    }
-    .area-button button:nth-of-type(1):hover{
-        width: 90%;
+        height: 3.5rem;
+        font-size: 1.1rem;
     }
 }
