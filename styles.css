@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New';
+}
+:root{
+    --background: url("bg.jpg");
+    --backdrop: rgba(108,117,125,0.6);
+    --line: #6C757D;
+    --font: #E9ECEF;
+    --button: rgba(108, 117, 125,0.5);
+}
+body{
+    background: var(--background);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 90vw;
+    max-width: 550px;
+    height: fit-content;
+    overflow: hidden;
+}
+.header{
+    height: 70px;
+}
+.area-button button{
+    display: block;
+    width: 80%;
+    margin: 8px auto;
+    height: 3rem;
+    border-radius: 5px;
+    border: unset;
+    background-color: var(--button);
+    backdrop-filter: blur(2px);
+    color: var(--font);
+    font-size: 1rem;
+}
+.pfp{
+    width: 130px;
+    height: 130px;
+    background: url("pepe.jpeg");
+    background-position: center center;
+    background-size: cover;
+    border: 7px solid var(--line);
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 100%;
+    z-index: 1;
+}
+.topic{
+    padding-top: 90px;
+}
+.text-head{
+    text-align: center;
+    color: var(--font);
+}
+.area-button{
+    padding: 1rem 0 0.6rem 0;
+}
+.topic{
+    background-color: var(--backdrop);
+    backdrop-filter: blur(3px);
+    border-radius: 10px 10px 8px 8px;
+}
+.text-head p{
+    font-size: 1.2rem;
+}
+.text-head h1{
+    font-size: 1.4rem;
+}
+.area-button button:hover{
+    width: 85%;
+    background: rgba(0, 158, 0, 0.6);
+    transition: 100ms ease-in-out;
+}
+/* masih dalam pembangunan */
+.area-button button:nth-of-type(1):hover{
+    width: 85%;
+    background: rgba(189, 0, 0, 0.6);
+    transition: 100ms ease-in-out;
+}
+
+/* media query */
+
+/* 1. handphone */
+@media screen and (min-height: 700px) {
+    .area-button{
+        padding: 1rem 0 1.2rem 0;
+    }
+    .area-button button{
+        height: 3.1rem;
+        width: 82%;
+    }
+    .area-button button:hover{
+        width: 87%;
+    }
+    .area-button button:nth-of-type(1):hover{
+        width: 87%;
+    }
+}
+
+/* 2. tablet */
+@media screen and (min-height: 900px) and (min-width: 700px){
+    .text-head h1{
+        font-size: 1.8rem;
+    }
+    .area-button button{
+        height: 3.4rem;
+        width: 86%;
+    }
+    .main-body{
+        width: 100vw;
+        max-width: 600px;
+    }
+    .area-button button:hover{
+        width: 90%;
+    }
+    .area-button button:nth-of-type(1):hover{
+        width: 90%;
+    }
+}
