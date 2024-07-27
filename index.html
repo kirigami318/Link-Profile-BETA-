@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <video poster="prev.jpg" src="bg.mp4" id="vidio" type="video/mp4" autoplay loop>
+    </video>
     <div class="main-body">
         <div class="header">
             <div class="pfp"></div>
@@ -19,12 +21,12 @@
             <div class="area-button">
                 <form>
                     <button onclick="libur()">Portofolio</button>
-                    <button>LinkedIn</button>
-                    <button>Instagram</button>
-                    <button>X</button>
-                    <button>Github</button>
-                    <button>Sketchfab</button>
-                    <button>DeviantArt</button>
+                    <button onclick="kerja()" formaction="https://www.linkedin.com/in/farrel-el-shirazy-falahi-5259082b0/">LinkedIn</button>
+                    <button onclick="kerja()" formaction="https://www.instagram.com/farrel_elsf/">Instagram</button>
+                    <button onclick="kerja()" formaction="https://x.com/Elfarrel24">X</button>
+                    <button onclick="kerja()" formaction="https://github.com/kirigami318">Github</button>
+                    <button onclick="kerja()" formaction="https://sketchfab.com/kirigami318">Sketchfab</button>
+                    <button onclick="kerja()" formaction="https://www.deviantart.com/kirigami318">DeviantArt</button>
                 </form>
             </div>
         </div>
@@ -32,6 +34,9 @@
     <script>
         function libur(){
             alert("Maaf, Situs sedang diperbaiki")
+        }
+        function kerja(){
+            alert("Anda akan menuju ke situs lain")
         }
     </script>
 </body>
