@@ -4,7 +4,7 @@
     font-family: 'Courier New';
 }
 :root{
-    --background: url("bg.jpg");
+    --background: url("bg.mp4");
     --backdrop: rgba(108,117,125,0.6);
     --line: #6C757D;
     --font: #E9ECEF;
@@ -16,6 +16,13 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+}
+#vidio{
+    position: fixed;
+    right: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 .main-body{
     position: absolute;
@@ -48,9 +55,9 @@ body{
 .pfp{
     width: 120px;
     height: 120px;
-    background: url("pepe.jpeg");
-    background-position: center center;
-    background-size: cover;
+    background: url("hoshino.jpeg");
+    background-position: 50% center;
+    background-size: 210px;
     border: 7px solid var(--line);
     position: absolute;
     margin: 0 auto;
@@ -83,13 +90,12 @@ body{
     cursor: default;
 }
 .area-button button:hover{
-    width: 85%;
+    width: 85% !important;
     background: rgba(0, 158, 0, 0.6);
     transition: 100ms ease-in-out;
 }
 /* masih dalam pembangunan */
 .area-button button:nth-of-type(1):hover{
-    width: 85%;
     background: rgba(189, 0, 0, 0.6);
     transition: 100ms ease-in-out;
 }
@@ -121,7 +127,7 @@ body{
         width: 86%;
     }
     .area-button button:hover, .area-button button:nth-of-type(1):hover{
-        width: 89%;
+        width: 89% !important;
     }
     .pfp{
         width: 135px;
@@ -141,6 +147,10 @@ body{
     .area-button button{
         height: 3.7rem;
         font-size: 1.1rem;
+        width: 91%;
+    }
+    .area-button button:hover, .area-button button:nth-of-type(1):hover{
+        width: 93% !important;
     }
 }
 @media screen and (min-width: 1000px) and (orientation: portrait){
@@ -161,6 +171,12 @@ body{
     .area-button{
         padding: 0.5rem 0 0.1rem 0;
     }
+    .area-button button{
+        width: 88%;
+    }
+    .area-button button:hover, .area-button button:nth-of-type(1):hover{
+        width: 90% !important;
+    }
 }
 @media screen and (min-height: 651px) and (orientation: landscape){
     .topic{
@@ -175,8 +191,14 @@ body{
     .text-head p{
         font-size: 1.1rem;
     }
+    .area-button button{
+        width: 90%;
+    }
+    .area-button button:hover, .area-button button:nth-of-type(1):hover{
+        width: 92% !important;
+    }
 }
-@media screen and (min-height: 1200px) and (orientation: landscape) {
+@media screen and (min-height: 1000px) and (orientation: landscape) {
     .pfp{
         width: 135px;
         height: 135px;
