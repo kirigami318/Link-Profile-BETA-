@@ -57,7 +57,7 @@ body{
     height: 120px;
     background: url("hoshino.jpeg");
     background-position: 50% center;
-    background-size: 210px;
+    background-size: 200px;
     border: 7px solid var(--line);
     position: absolute;
     margin: 0 auto;
